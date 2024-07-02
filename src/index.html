@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="m-4 p-2  box-border">
+  <header>
+    <nav class="fixed top-0 left-0 w-full p-5 bg-green-900 shadow md:flex md:items-center md:justify-between z-50" id="navbar">
+      <div class="flex justify-between items-center">
+        <p class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold">P</p>
+        <span class="text-2xl font-[Poppins] cursor-pointer text-white">PixelCraft Studio</span>
+        <span class="text-3xl cursor-pointer md:hidden block mx-2">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      <ul id="menu" class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-green-900 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0"><a href="#home" class="text-xl hover:text-orange-600 duration-500 text-white" onclick="Menu(document.querySelector('ion-icon'))">Home</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#about" class="text-xl hover:text-orange-600 duration-500 text-white" onclick="Menu(document.querySelector('ion-icon'))">About Me</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#services" class="text-xl hover:text-orange-600 duration-500 text-white" onclick="Menu(document.querySelector('ion-icon'))">UI Designs</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#works" class="text-xl hover:text-orange-600 duration-500 text-white" onclick="Menu(document.querySelector('ion-icon'))">Projects</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#contact" class="text-xl hover:text-orange-600 duration-500 text-white rounded-l-full" onclick="Menu(document.querySelector('ion-icon'))">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Welcome Animation -->
+  <div class="flex justify-center items-center h-screen animate-fadeIn">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold text-green-500">Welcome To My Portfolio!</h1>
+      <p class="text-center">Mobile Developer & UI Designer</p>
+      <p class="text-lg text-gray-700 mt-4">I specialize in mobile application development and creating beautiful user interfaces.</p>
+      <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 block mx-auto">
+        <a href="file:///C:/Users/Faith%20Swen/Downloads/Copy%20of%20Copy%20of%20Faith%20Makulah%20Swen%20Resume%20%20(1).pdf" download>Download CV</a>
+       
+      </button>
+    </div>
+  </div>
+
+  <!-- Intro Section -->
+  <div id="home" class="flex-wrap flex lg:flex-row flex-col justify-between items-center mx-5 md:mx-20 md:mb-5">
+    <div class="max-w-md mx-auto mt-10">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img class="w-full h-72 object-cover object-center" src="./img/faith.jpg" alt="Image Description">
+        <div class="p-4">
+          <p class="text-center"> I am Faith Makulah Swen</p>
+          <p>I am passionate about designing and developing intuitive user interfaces.
+            I have hands-on experience of over 6 months in React Native and 2 years in Flutter,
+            engaging in diverse design domains.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div id="services" class="bg-white mt-20">
+    <div class="container mx-auto">
+      <!-- top -->
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-green-500 font-bold">UI Designs</h1>
+        <p class="w-11/12 md:w-1/2 text-center text-gray-400">
+          I design stunning user interfaces that enhance the user experience using Figma.
+          My expertise lies in creating intuitive and visually appealing designs.
+          Here are some of the user interfaces I have designed:
+        </p>
+      </div>
+      <!-- bottom -->
+      <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+        <!-- card -->
+        <div class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+          <img class="w-30" src="./img/mindMate.JPG" alt="MindMate Design" />
+          <h1 class="font-medium text-lg">UX / UI Design</h1>
+          <p class="text-gray-400">
+            Design of MindMate mobile app.
+          </p>
+          <a class="text-green-500 font-semibold text-sm" href="https://www.figma.com/design/QJDEM3m2SkrhzyNyCQnQKr/GroupProject%3ACityFinderApp?node-id=2-8&t=lT0c4YOkw3Sxdshq-0">Read More</a>
+        </div>
+        <!-- card -->
+        <div class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+          <img class="w-30" src="./img/Dementis.JPG" alt="Dementis Design" />
+          <h1 class="font-medium text-lg">UX / UI Design</h1>
+          <p class="text-gray-400">
+             Design of Dementia Care App Rwanda mobile app.
+          </p>
+          <a class="text-green-500 font-semibold text-sm" href="https://www.figma.com/design/yAnYLlqr2IVpWyAaTLm5C5/Dementia-Care-App?node-id=1-1656&t=lT0c4YOkw3Sxdshq-0">Read More</a>
+        </div>
+        <!-- card -->
+        <div class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+          <img class="w-30" src="./img/CityFinder.JPG" alt="City Finder Design" />
+          <h1 class="font-medium text-lg">UX / UI Design</h1>
+          <p class="text-gray-400">
+            Design of CityFinder  mobile app.
+          </p>
+          <a class="text-green-500 font-semibold text-sm" href="https://www.figma.com/design/QJDEM3m2SkrhzyNyCQnQKr/GroupProject%3ACityFinderApp?node-id=2-8&t=lT0c4YOkw3Sxdshq-0">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div id="about" class="my-auto flex flex-col gap-3 mx-5 md:mx-20">
+    <h1 class="text-orange-600 font-bold">ABOUT ME</h1>
+    <h1 class="text-3xl font-medium dark:text-black">Here are some of my key skills:</h1>
+    <h2 class="text-gray-400 font-medium">HTML</h2>
+    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+      <div class="w-full bg-orange-600 h-1.5 rounded-md"></div>
+    </div>
+    <h2 class="text-gray-400 font-medium">TailwindCSS</h2>
+    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+      <div class="w-5/2 bg-orange-600 h-1.5 rounded-md"></div>
+    </div>
+    <h2 class="text-gray-400 font-medium">JavaScript</h2>
+    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+      <div class="w-5/3 bg-orange-600 h-1.5 rounded-md"></div>
+    </div>
+    <h2 class="text-gray-400 font-medium">React Native</h2>
+    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+      <div class="w-5/5 bg-orange-600 h-1.5 rounded-md"></div>
+    </div>
+    <h2 class="text-gray-400 font-medium">Flutter</h2>
+    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+      <div class="w-4/5 bg-orange-600 h-1.5 rounded-md"></div>
+    </div>
+  </div>
+
+
+ <!-- Projects -->
+<div id="works" class="py-20 bg-white">
+  <div class="container mx-auto">
+    <!-- top -->
+    <div class="flex flex-col gap-3 items-center">
+      <h1 class="text-orange-600 font-bold">Explore Projects</h1>
+      <p class="w-11/12 md:w-1/2 text-center text-gray-400">
+        I have developed mobile applications using React Native and Flutter. Here are some of my recent projects:
+      </p>
+    </div>
+    <!-- bottom -->
+    <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+      <!-- card -->
+      <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-6 md:my-12 mx-2 transition-all hover:scale-110">
+        <img src="./img/dementia1.JPG" alt="Dementia Care App" />
+        <p>Project 1: React Native Dementia Care App Rwanda</p>
+        <a href="https://github.com/ForeverKuku/Dementia_Project" target="_blank">
+          <i class="fas fa-external-link-alt"></i> View on GitHub
+        </a>
+      </div>
+      <!-- card -->
+      <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-6 md:my-12 mx-2 transition-all hover:scale-110">
+        <img src="./img/finalmovie.png" alt="Muvi Movie App" />
+        <p>Project 2: React Native Muvi Movie App</p>
+        <a href="https://github.com/ForeverKuku/MuviApp" target="_blank">
+          <i class="fas fa-external-link-alt"></i> View on GitHub
+        </a>
+      </div>
+      <!-- card -->
+      <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-6 md:my-12 mx-2 transition-all hover:scale-110">
+        <img src="./img/city.jpg" alt="City Finder App" />
+        <p>Project 3: React Native City Finder App</p>
+        <a href="https://github.com/MutesiUwaseVanessa/CityFinder" target="_blank">
+          <i class="fas fa-external-link-alt"></i> View on GitHub
+        </a>
+      </div>
+      <!-- card -->
+      <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-6 md:my-12 mx-2 transition-all hover:scale-110">
+        <img src="./img/app2.png" alt="Bus Tracking System" />
+        <p>Project 4: Flutter Remote Bus Tracking System for Passengers in Kigali</p>
+        <a href="https://github.com/ForeverKuku/transit_tracker_new.git" target="_blank">
+          <i class="fas fa-external-link-alt"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <hr>
+ <footer class="bg-green-900 text-white py-12 flex-shrink-0">
+  <div class="container max-auto flex flex-col items-center gap-10">
+    <div class="text-center p-2 w-full h-full" id="contact">
+      <p class="bold text-2xl">Let's get in touch and talk about your next project.</p>
+      <ul class="flex flex-wrap justify-center gap-8 mt-4">
+        <li><a href="https://github.com/ForeverKuku" target="_blank" class="flex items-center text-lg text-white"><i class="fab fa-github mr-2"></i> GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/faith-makulah-swen-239411217" target="_blank" class="flex items-center text-lg text-white"><i class="fab fa-linkedin mr-2"></i> LinkedIn</a></li>
+        <li><a href="tel:+250785603898" class="flex items-center text-lg text-white"><i class="fas fa-phone mr-2"></i> +250785603898</a></li>
+        <li><a href="mailto:swenfaithm@gmail.com" class="flex items-center text-lg text-white"><i class="fas fa-envelope mr-2"></i> swenfaithm@gmail.com</a></li>
+      </ul>
+    </div>
+    <p class="text-xl font-bold text-center">&copy; 2024 Faith Makulah Swen.</p>
+  </div>
+</footer>
+
+
+  
+
+  
+   
+ 
+  
+
+
+  <script>
+    function Menu(icon) {
+      let menu = document.getElementById('menu');
+      let navbar = document.getElementById('navbar');
+      if (menu.classList.contains('top-[-400px]')) {
+        menu.classList.remove('top-[-400px]');
+        menu.classList.add('top-[70px]');
+        menu.classList.add('opacity-100');
+        navbar.classList.add('shadow-lg');
+        icon.name = "close";
+      } else {
+        menu.classList.add('top-[-400px]');
+        menu.classList.remove('top-[70px]');
+        menu.classList.remove('opacity-100');
+        navbar.classList.remove('shadow-lg');
+        icon.name = "menu";
+      }
+    }
+  </script>
+</body>
+</html>
